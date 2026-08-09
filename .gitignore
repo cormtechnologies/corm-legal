@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+
+# Intermediate build artifacts from the .docx -> HTML conversion
+privacy-body.html
+terms-body.html
+disclaimer-body.html
