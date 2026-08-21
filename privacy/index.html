@@ -150,7 +150,7 @@ footer.foot a { color: var(--muted); }
 <p>AI Behavioral Data: Your interactions with AI features, including: recipes viewed, cooked, and rated; meal suggestion acceptance and dismissal patterns; cooking time patterns; and ingredient preference signals. This data is used to personalize your experience.</p>
 <p>Perishable Tracking Data: Shelf life learning data derived from your usage patterns (when items are consumed or removed relative to estimated expiration).</p>
 <p>Performance Telemetry: App launch time, network request timing, and crash reports.</p>
-<p>Pricing Telemetry: Aggregated, anonymized price data for grocery cost estimation (no individual transaction data is stored).</p>
+<p>Pricing Telemetry: Price observations used to estimate grocery costs. These records carry no account identifier and no precise location. They do carry a shared item code derived from the item&rsquo;s name &mdash; the same code for the same item across all users, which is what allows prices to be pooled. That code is not secret: it is computed from the name, so the item name can be worked out from it. Nothing about who bought the item is stored alongside it.</p>
 <h2>3.3 Data We Do NOT Collect</h2>
 <p>We do NOT collect precise geolocation data.</p>
 <p>We do NOT access your device's camera, microphone, contacts, or photos without explicit per-use permission.</p>
