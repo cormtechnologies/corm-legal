@@ -181,7 +181,6 @@ footer.foot a { color: var(--muted); }
 <p>Analytics: With your consent, we collect anonymized analytics events in our own analytics infrastructure for service improvement. Technical safeguards scrub personally identifiable information before transmission. If we ever engage a third-party analytics provider, it will process data only on our behalf under a Data Processing Agreement, and this policy will be updated accordingly.</p>
 <p>Legal Requirements: We may disclose data when required by law, court order, or governmental regulation, or when necessary to protect our legal rights, safety, or property.</p>
 <p>Business Transfers: In connection with a merger, acquisition, or sale of assets, your data may be transferred to the successor entity, subject to the same privacy protections.</p>
-<p>Grid Carbon-Intensity Service: To schedule non-urgent background work at times when the electrical grid is cleaner, the Application queries a third-party grid carbon-intensity service (Microsoft's Carbon Aware API) with a fixed, non-personal region identifier. These requests contain no account data or personal content; as with any internet request, the provider technically receives your device's IP address.</p>
 <p>We do not share your dietary restriction data, health-related preferences, or allergen profiles with any third party for marketing or advertising purposes.</p>
 <h1>7. Data Retention</h1>
 <p>We retain your personal data only for as long as necessary to fulfill the purposes described in this policy:</p>
@@ -208,9 +207,9 @@ footer.foot a { color: var(--muted); }
 <h1>9. Consent Management</h1>
 <p>The Application provides granular consent controls through the Consent Settings interface:</p>
 <p>Functional Consent: Required for core Application features. Cannot be disabled while using the Application. Covers: account authentication, meal planning, pantry management, shopping lists, recipe storage, and cloud synchronization.</p>
-<p>Analytics Consent: Optional. Controls collection of usage analytics, performance telemetry, and anonymized behavioral data for service improvement. You may opt out at any time without affecting core functionality.</p>
+<p>Analytics Consent: Optional. Controls collection of usage analytics, performance telemetry, crash and diagnostic reports, and anonymized behavioral data for service improvement. You may opt out at any time without affecting core functionality.</p>
 <p>Marketing Consent: Optional. Controls marketing communications, promotional notifications, and feature announcements. You may opt out at any time.</p>
-<p>Consent preferences are stored locally and synchronized with our servers. Changes to consent take effect immediately. Withdrawing consent does not affect the lawfulness of processing performed before withdrawal.</p>
+<p>Consent preferences are stored on your device and take effect immediately. (Your dietary-data sync consent is the one exception: its state is reflected server-side by the presence or absence of your synced dietary data, so that withdrawal removes the data itself.) Because consent is stored on-device, reinstalling the Application or moving to a new device returns consent settings to their defaults, and optional consents must be granted again. Withdrawing consent does not affect the lawfulness of processing performed before withdrawal.</p>
 <h1>10. Your Privacy Rights</h1>
 <p>Depending on your location, you have some or all of the following rights regarding your personal data:</p>
 <h2>10.1 Rights Under GDPR (EEA, UK, Switzerland)</h2>
@@ -260,14 +259,15 @@ footer.foot a { color: var(--muted); }
 <h1>13. Cookies and Tracking Technologies</h1>
 <p>The Corm mobile application does not use browser cookies. We use the following technologies:</p>
 <p>Local Storage: App preferences, consent settings, and cached data are stored on-device using standard iOS storage mechanisms.</p>
-<p>Analytics SDKs: With your consent, anonymous usage events are collected for performance monitoring. Technical safeguards ensure no personally identifiable data is included.</p>
+<p>Device Search Index (Spotlight): So that you can find your recipes from your iPhone's home screen, the Application writes recipe titles, categories, timings, and ingredient names into Apple's on-device Spotlight index. These entries stay on your device: they are not marked for public indexing, carry no web address, are not readable by other applications, and are never transmitted to us or to Apple. You can turn this off at any time in Settings, under Data &amp; Privacy, using "Recipe search in Spotlight"; turning it off also removes the entries the Application previously wrote.</p>
+<p>First-Party Analytics: With your consent, anonymous usage and performance events are collected by our own infrastructure — no third-party analytics SDK is embedded in the Application. Technical safeguards ensure no personally identifiable data is included.</p>
 <p>No Cross-App Tracking: We do not track users across other apps or websites.</p>
 <h1>14. Changes to This Policy</h1>
 <p>We may update this Privacy Policy from time to time. Material changes will be communicated through in-app notifications and/or email at least 30 days before they take effect, and the Application will present the updated policy for your review and acceptance. The "Effective Date" at the top of this policy indicates when it was last updated. Where required by law, we will seek your renewed consent for material changes to data processing.</p>
 <h1>15. Contact Information</h1>
 <p>For privacy inquiries, data subject requests, or complaints:</p>
 <p>Email: privacy@cormtechnologies.com</p>
-<p>Data Protection Inquiries: dpo@cormtechnologies.com</p>
+<p>Data Protection Inquiries: dpo@cormtechnologies.com (this mailbox routes data-protection matters to our privacy team; Corm Technologies, LLC has not designated a statutory Data Protection Officer under GDPR Article 37)</p>
 <p>Mailing Address:</p>
 <p>Corm Technologies, LLC</p>
 <p>P.O. Box 172</p>
