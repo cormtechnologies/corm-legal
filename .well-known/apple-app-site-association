@@ -1,15 +1,5 @@
 {
   "applinks": {
-    "details": [
-      {
-        "appIDs": ["JNPD9V8Y6G.com.cormtechnologies.corm"],
-        "components": [
-          { "/": "/invite/*", "comment": "Household invitation deep link (auth-bearing token)" },
-          { "/": "/recipe/*", "comment": "Recipe detail deep link" },
-          { "/": "/login", "comment": "Magic-link sign-in" },
-          { "/": "/suggestions", "comment": "Meal suggestions deep link" }
-        ]
-      }
-    ]
+    "details": []
   }
 }

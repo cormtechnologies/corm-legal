@@ -7,18 +7,18 @@ The authoritative, user-facing versions of Corm's legal documents live inside th
 ## Contents
 
 - `index.html` — landing page linking to each document.
-- `privacy/index.html` — Corm Privacy Policy, **Version 1.2, Effective September 8, 2026**. Served at `/privacy` (no trailing `.html`).
+- `privacy/index.html` — Corm Privacy Policy, **Version 1.4, Effective September 30, 2026**. Served at `/privacy` (no trailing `.html`).
 - `privacy.html` — legacy flat path for the Privacy Policy, kept so older `/privacy.html` links still resolve.
-- `terms/index.html` — Corm Terms of Service, **Version 1.2, Effective September 8, 2026**. Served at `/terms`.
-- `disclaimer/index.html` — Corm Food Safety & Dietary Disclaimer, **Version 1.1, Effective September 8, 2026**. Served at `/disclaimer`. Hosted because the Terms incorporate it by reference — a document users are bound by must be reachable outside the app.
+- `terms/index.html` — Corm Terms of Service, **Version 1.3, Effective September 30, 2026**. Served at `/terms`.
+- `disclaimer/index.html` — Corm Food Safety & Dietary Disclaimer, **Version 1.1, Effective October 1, 2026**. Served at `/disclaimer`. Hosted because the Terms incorporate it by reference — a document users are bound by must be reachable outside the app.
 - `support/index.html` — Support page (contact, common questions). Served at `/support`.
 - `CNAME` — GitHub Pages custom domain: `legal.cormtechnologies.com`.
 - `.nojekyll` — disable Jekyll processing (we serve raw HTML).
-- `.well-known/apple-app-site-association` — Associated Domains / Universal Links manifest. Inert until the app ships an `associated-domains` entitlement (requires a paid Apple Developer team); harmless to host in the meantime.
+- `.well-known/apple-app-site-association` — Universal Links manifest with no entries: this site serves no app page, and the app associates only `cormtechnologies.com` (served from the corm-www repo, `/invite/` only) since 2026-09-26, when the owner decided that only that one host opens links in the app. It used to claim `/invite/*`, `/recipe/*`, `/login` and `/suggestions` here, none of which this site serves (the app has no magic-link sign-in and, since its 2026-09-26 fix, ignores a `/login` link). Do not add paths back unless this site starts serving that page and the app's `Corm/Corm.entitlements` names `applinks:legal.cormtechnologies.com` again.
 
 ## Source of truth
 
-The HTML in this repo is rendered from the source documents held in the Corm iOS app repository at `Corm/Resources/*.txt` — the binding copies users accept at the in-app consent gate (Terms of Service and Privacy Policy Version 1.2; Food Safety & Dietary Disclaimer Version 1.1; all Effective September 8, 2026). The root-level `.docx` suite in the app repository is regenerated from the same masters. When a document is revised and counsel re-approves it, regenerate the corresponding HTML here and bump the Effective Date and Version in both places.
+The HTML in this repo is rendered from the source documents held in the Corm iOS app repository at `Corm/Resources/*.txt` — the binding copies users accept at the in-app consent gate (Privacy Policy Version 1.4 and Terms of Service Version 1.3, both Effective September 30, 2026; Food Safety & Dietary Disclaimer Version 1.1, Effective October 1, 2026). The root-level `.docx` suite in the app repository is regenerated from the same masters. When a document is revised and counsel re-approves it, regenerate the corresponding HTML here and bump the Effective Date and Version in both places.
 
 ## How updates are published
 
