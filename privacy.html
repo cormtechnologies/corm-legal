@@ -173,7 +173,7 @@ footer.foot a { color: var(--muted); }
 <p>Household Alerts: When you are in a household, notifying you when a food in the household's shared pantry runs low or runs out because of another member's change.</p>
 <p>Dietary Conflict Detection: Checking recipes and meal plans against your configured dietary restrictions and allergen profiles.</p>
 <p>Budget Analytics: Calculating spending estimates, budget utilization, and providing cost projections based on your configured budget parameters.</p>
-<p>Service Improvement: Analyzing aggregated, anonymized usage patterns to improve features, fix bugs, and optimize performance.</p>
+<p>Service Improvement: Using the crash and diagnostic reports, AI performance measurements and price observations described in Section 3.2, which are collected only on a paid plan and with your Analytics consent, to improve features, fix bugs, and optimize performance.</p>
 <p>Security: Detecting and preventing unauthorized access, fraud, and abuse.</p>
 <p>Communications: Sending service-related notifications (e.g., expiration alerts, plan reminders). Marketing communications are sent only with your explicit consent.</p>
 <h1>6. Data Sharing and Third Parties</h1>
@@ -207,7 +207,7 @@ footer.foot a { color: var(--muted); }
 <p>We implement comprehensive security measures to protect your data:</p>
 <p>Encryption at Rest: Sensitive data is encrypted using industry-standard encryption.</p>
 <p>Encryption in Transit: All network communications use TLS 1.2 or higher.</p>
-<p>PII Safeguards: Dedicated technical controls scrub personally identifiable information from analytics and telemetry data before it leaves your device.</p>
+<p>PII Safeguards: Before Apple's on-device language model structures a recipe you import, or re-orders meal ideas on your device, technical controls replace email addresses, US-style 10-digit phone numbers, and payment card numbers written as four groups of four digits or as one run of 13 to 19 digits, in the text the model is given. These controls are not applied to the pantry item names your device sends to our server to rank meal ideas (see Section 12), or to crash and diagnostic reports, which are stored against your account identifier (see Performance Telemetry and Diagnostics in Section 3.2).</p>
 <p>Biometric Authentication: Face ID and Touch ID are available for sensitive operations. Biometric data is processed entirely on-device by Apple's framework and is never transmitted to our servers.</p>
 <p>Device Integrity: Application integrity verification ensures the Application is running on a genuine, non-compromised device.</p>
 <p>Access Controls: Server-side security policies ensure users can only access their own data.</p>
